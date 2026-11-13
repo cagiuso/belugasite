@@ -1,0 +1,34 @@
+{
+  "name": "beluga-motion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "model:build": "node scripts/create-logo-model.mjs"
+  },
+  "dependencies": {
+    "gsap": "3.13.0",
+    "lenis": "1.3.11",
+    "lucide-react": "0.468.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "split-type": "0.3.4",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/react": "16.3.0",
+    "@vitejs/plugin-react": "4.4.1",
+    "jsdom": "26.1.0",
+    "pngjs": "7.0.0",
+    "vite": "6.3.6",
+    "vitest": "3.2.4"
+  }
+}

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+a {
+  color: inherit;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+svg {
+  flex-shrink: 0;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 0;
+  font: inherit;
+  font-weight: 550;
+  text-decoration: none;
+  background: var(--primary);
+  color: var(--background);
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+.button-ghost,
+.button-link {
+  background: transparent;
+  color: inherit;
+}
+.button-icon {
+  padding: 10px;
+  min-width: 44px;
+  min-height: 44px;
+}
+.button svg {
+  width: 18px;
+  height: 18px;
+}
+.button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.gap-2 {
+  gap: 8px;
+}
+.w-full {
+  width: 100%;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.text-primary {
+  color: var(--primary);
+}
+[hidden] {
+  display: none !important;
+}
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 5px;
+}
+.project-video,
+.project-gallery {
+  width: 100%;
+  height: 100%;
+  min-height: 310px;
+  object-fit: cover;
+  background: var(--ink);
+}
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 1.2s var(--motion-out);
+}
+.team-member:hover img {
+  scale: 1.07;
+}

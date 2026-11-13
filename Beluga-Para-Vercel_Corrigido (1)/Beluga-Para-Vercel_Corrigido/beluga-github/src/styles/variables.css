@@ -1,0 +1,18 @@
+:root {
+  --background: #13233b;
+  --surface-deep: #0d192b;
+  --card: #13243f;
+  --foreground: #f3f4f6;
+  --primary: #7cddbf;
+  --muted-foreground: #b2bdce;
+  --border: #ffffff26;
+  --paper: #f3f4f6;
+  --ink: #13233b;
+  --ink-muted: #516277;
+  --paper-border: #13233b26;
+  --mint-wash: #d5eae2;
+  --font-sans: "Segoe UI", Arial, sans-serif;
+  --font-display: "Segoe UI", Arial, sans-serif;
+  --shadow-elegant: 0 30px 80px #00000026;
+  --motion-out: cubic-bezier(0.19, 1, 0.22, 1);
+}

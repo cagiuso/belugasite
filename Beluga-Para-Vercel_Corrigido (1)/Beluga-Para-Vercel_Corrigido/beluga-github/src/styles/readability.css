@@ -1,0 +1,30 @@
+/* Section labels stay distinct and readable without enlarging media cards. */
+.section-top > .eyebrow,
+.faq-grid > div > .eyebrow {
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+.faq-grid > div > p { font-size: 18px; line-height: 1.7; }
+.journey-tabs { gap: 16px; }
+.journey-tab { height: 108px; gap: 14px; padding: 12px 8px; }
+.journey-dot { width: 38px; height: 38px; font-size: 13px; flex-shrink: 0; }
+.journey-tab > span:nth-child(2) { font-size: 16px; line-height: 1.4; }
+.journey-tab small { font-size: 14px; margin-top: 6px; }
+/* A newly selected panel must not freeze at the transparent first frame. */
+[data-tour-paused="true"] .journey-panel {
+  animation: none !important;
+  opacity: 1;
+  transform: none;
+}
+@media (max-width: 760px) {
+  .section-top > .eyebrow,
+  .faq-grid > div > .eyebrow { font-size: 18px; }
+  .faq-grid > div > p { font-size: 16px; }
+  .journey-tabs { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px 16px; }
+  .journey-tab { flex-direction: row; align-items: center; height: 96px; padding: 12px 4px; gap: 10px; }
+  .journey-tab > span:nth-child(2) { font-size: 14px; }
+  .journey-tab small { font-size: 13px; }
+  .journey-dot { width: 34px; height: 34px; font-size: 12px; }
+}
